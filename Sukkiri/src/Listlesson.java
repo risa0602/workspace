@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
-
 
 public class Listlesson {
 
 	public static void main(String[] args) {
-		ArrayList<String> names = new ArrayList<>();
+		List<String> names = new ArrayList<>();
 		names.add("John");
 		names.add("Paul");
 		names.add("George");
@@ -76,6 +77,21 @@ public class Listlesson {
 		System.out.println(list.indexOf(fruits));
 		Fruits removed = list.remove(0);
 		System.out.println(removed);
+		
+		List<String> sushi = new LinkedList<>();
+		sushi.add("まぐろ");
+		sushi.add("えび");
+		sushi.add("さーもん");
+		sushi.add("うに");
+		sushi.add("まぐろ");
+		sushi.add("えび");
+		sushi.add("いくら");
+		sushi.add("はまち");
+		sushi.add("ほたて");
+		System.out.println(sushi.size());
+		for(String s : sushi) {
+			System.out.println(s);
+		}
 	}
 }
 
